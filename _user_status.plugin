@@ -1,0 +1,17 @@
+#!/bin/bash
+# Plugin:       User Status
+# Description:  Watchman Monitoring custom plugin to report if the current logged in user is an admin.
+# Author:       Jack-Daniyel Strong <jack@jdstrong.com>
+# Date:         29-Jan-2019
+# Version:      0.1
+# ==============================================================================
+
+current_user=`stat -f '%Su' /dev/console`
+
+if id -Gn $current_user | grep -q -w admin; 
+then 
+    echo "$current_user (Admin User)"; 
+else 
+    echo "$current_user (Standard User)";
+fi
+exit 0
