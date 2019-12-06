@@ -8,6 +8,8 @@
 	<string>7acfc06b-8d6f-4802-8f73-7140fa37b1b1</string>
 	<key>PluginVersion</key>
 	<string>0.1</string>
+	<key>PluginSlug</key>
+	<string>user-status</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/Library/MonitoringClient/Plugins/_user_status.plugin</string>
